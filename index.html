@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    <style type="text/css">
+        body{
+            background-color: aqua;
+        }
+        form{
+            width: 50%;
+            height: auto;
+            margin: auto;
+            background-color:grey;
+        }
+        h1{
+            font-size: 40px;
+            font-family: Verdana;
+            color:color(srgb red green blue);
+        }
+        legend{
+            font-family: 'Courier New';
+            font-size: 20px;
+
+        }
+        h2{
+            font-family: 'Times New Roman';
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>SOLICITUD DE SERVICIO</h1>
+    <form action="Mi Servidor" method="POS">
+        <fieldset style="color: blue; border-color: red;">
+            <legend><u>Datos Personales</u></legend>
+                <label for="Nombre">Nombre:</label>
+                    <input type="text" id="Nombre" name="Nombre"
+                        placeholder="Escribe tu Nombre" required="True"><br>
+                    <br>
+                <label for="Apellido">Apellido:</label>
+                    <input type="text" id="Apellido" name="Apellido"
+                        placeholder="Escribe tu Apellido" required="True"><br>
+                    <br>
+                <label for="Edad">Edad:</label>
+                    <input type="number" name="Edad" id="Edad"
+                        placeholder="Ingresa tu Edad" min="0"><br>
+                    <br>
+                <label for="Fech_Nac">Fecha de Nacimiento:</label>
+                    <input type="date" name="Fech_Nac" id="Fech_Nac"><br>
+                    <br>
+                <label for="DNI">Documento Identidad:</label>
+                    <input type="number" id="DNI" name="DNI"
+                        placeholder="Ingresa tu DNI" min="0"><br>
+                    <br>
+                <label for="Cel">Telefono</label>
+                    <input type="text" id="Cel" name="Cel"
+                        placeholder="Ingresa tu Celular">
+                <label for="Celular">Operadora</label>
+                    <select name="Celular" id="Celeuar">
+                        <option value="Claro">Claro</option>
+                        <option value="Personal">Personal</option>
+                        <option value="Movistar">Movistar</option>
+                    </select><br>
+                    <br>
+                <label for="Genero">Genero</label><br>
+                    <input type="radio" id="Femenino" name="Genero">
+                        <label for="Femenino">Femenino</label>
+                    <input type="radio" id="Masculino" name="Genero">
+                        <label for="Masculino">Maculino</label>
+                    <input type="radio" id="Otro" name="Genero">
+                        <label for="Otro">Otro</label><br>
+                    <br>             
+       </fieldset>
+       <fieldset style="color: blue; border-color: red;">
+                <legend><u>Password</u></legend>
+                    <label for="email">Usuario</label>
+                         <input type="email" name="email" id="email"
+                            placeholder="Ingresa tu email" required="True"><br>
+                    <label for="Contraseña">Password</label>
+                        <input type="password" id="Contraseña" name="Contraseña">
+       </fieldset>
+       <fieldset style="color: blue; border-color: red;">
+                 <legend><u>Motivo de la Consulta</u></legend>
+                    <input type="checkbox" id="" name="">Mantenimiento Preventivo
+                    <input type="checkbox" id="" name="">Mantenimiento Correctivo <br>
+                    <input type="checkbox" name="" id="">Soporte Online 
+                    <input type="checkbox" id="" name="">Asesoria Privada
+                    <input type="checkbox" id="" name="">Consultoria
+                <p>
+                    <label for="Foto">Subir foto del Problema</label>
+                    <input type="file" id="Foto" name="Foto">
+                </p>
+                <p>
+                    <label for="Comentario">Descripcion del Problema</label>
+                    <textarea name="Comentario" cols="25" rows="3"></textarea>
+                </p>
+        </fieldset>
+        <fieldset style="color: blue; border-color: red;">
+                  <legend><u>Horario</u></legend>
+                    <input type="radio" name="" id="">08:00-10:00hs
+                    <input type="radio" name="" id="">10:00-12:00hs
+                    <input type="radio" name="" id="">12:00-14:00hs
+                    <input type="radio" name="" id="">14:00-16:00hs
+        </fieldset><br>
+        <fieldset style="color: blue; border-color: red;">
+                <p>
+                    <legend>
+                      <h2><u>Terminos y Condiciones</u></h2>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius autem ratione corrupti ab fuga animi accusamus vero! Sed, 
+                      sequi! Facilis harum atque possimus fugiat error molestiae voluptas officiis nostrum eligendi!
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quisquam cupiditate maxime ducimus amet laudantium rem 
+                      praesentium molestias soluta unde, repudiandae deleniti quasi incidunt nostrum nam totam earum, quaerat animi?
+                     </legend>
+                 </p>
+        <input type="submit" name="Enviar">
+        <input type="reset" name="Restablecer">
+    </fieldset>            
+    </form>    
+</body>
+</html>
